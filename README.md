@@ -100,3 +100,7 @@ directory will not be added.
 It also relies on the fact that the ``build_py`` sub-command runs first
 and copies all package data to the intermediary build directory
 (``build_lib``).
+
+The plugin does not support editable mode (currently in setuptools the
+``develop`` command does not run all ``build`` sub-commands), maybe in the
+future there will be an API to support the editable mode.
