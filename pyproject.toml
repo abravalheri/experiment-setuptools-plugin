@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "experiment-setuptools-plugin"
+version = "0.0.0"
+requires-python = ">=3.8"
+
+[project.entry-points."setuptools.finalize_distribution_options"]
+experiment_setuptools_plugin = "experiment_setuptools_plugin:install"
+
+[tool.experiment_setuptools_plugin]
